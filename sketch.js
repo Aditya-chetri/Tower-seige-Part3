@@ -115,8 +115,8 @@ function mouseReleased(){
 }
 function keyPressed(){
   if(keyCode === 32){
-      slingShot.attach(this.polygon.body);
       Matter.Body.setPosition(this.polygon.body,{x:380,y:400});
+      slingShot.attach(this.polygon.body);
   }
 }
 async function getBackgroundImg(){
